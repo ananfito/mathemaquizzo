@@ -15,16 +15,18 @@
     </div>
     <div class="gamezone">
       <div id="begin-game-text" style=''>
-        <p>Ready to begin?</p>
-        <button id="start-btn">BEGIN</button>
+        <h2>Ready to begin?</h2>
+        <button id="start-btn">Start</button>
       </div>
 
       <div id="quiz-question-zone" style="visibility: hidden">
         <h2 id='level-title' class='gamezone__title'></h2>
+        <h3 id="points">Points: 0</h3>
         <p id='quiz-question' class='gamezone__text'></p>
         <input type='number' name='quiz-input' id='quiz-input'>
         <button id='submit-btn'>Submit</button>
-        <button id='next-btn'>Next</button>
+        <p id="feedback"></p>
+        <button id='next-btn' style="visibility: hidden">Next</button>
       </div>
 
     </div>

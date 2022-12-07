@@ -1,27 +1,9 @@
-// Game Level Questions
+// Game Level Info
 const levels = {
-  level: [1, 2, 3],
-  questions: []
-
+  title: ["Level 1: Question 1", "Level 1: Question 2", "Level 2: Question 1", "Level 2: Question 2", "Level 3: Question 1", "Level 3: Question 2"],
+  questions: ["What is the square root of 64?", "What is the square root of 144?", "15 - 10 = ?", "10 - (-2) = ?", "What is 10% of 100?", "What is 20% of 200?"],
+  answers: [8, 12, 5, 12, 10, 40];
 }
-
-const levelOne = {
-  title: "Level 1",
-  question: ["What is the square root of 64?", "What is the square root of 144?"], 
-  answer: [8, 12]
-};
-
-const levelTwo = {
-  title: "Level 2",
-  question: ["15 - 10 = ?", "10 - (-2) = ?"],
-  answer: [5, 12]
-};
-
-const levelThree = {
-  title: "Level 3",
-  question: ["What is 10% of 100?", "What is 20% of 200?"],
-  answer: [10, 40]
-};
 
 // HTML Element Variables
 const levelTitle = document.getElementById("level-title");
@@ -32,6 +14,10 @@ const startButton = document.getElementById("start-btn");
 const beginGameTxt = document.getElementById("begin-game-text");
 const quizQuestionZone = document.getElementById("quiz-question-zone");
 const nextBtn = document.getElementById("next-btn");
+const feedbackEl = document.getElementById("feedback");
+const pointsEl = document.getElementById("points");
+
+var levelNum = 0;
 
 // Event Listeners
 startButton.addEventListener("click", startGame);
@@ -41,34 +27,41 @@ nextBtn.addEventListener("click", next)
 // Game functions
 // start game
 function startGame() {
-  console.log("let the game begin"); //DEL
-  levelTitle.innerText = "Level 1";
-  quizQuestion.innerText = levelOne["question"][0];
+  levelTitle.innerText = levels["title"][levelNum];
+  quizQuestion.innerText = levels["questions"][levelNum];
   quizQuestionZone.setAttribute("style", "");
   beginGameTxt.setAttribute("style", "visibility: hidden");
+  inputEl.value = "";
 
 };
-
-console.log(levelOne["answer"][0]) //DEL 
 
 // check answer
 let answerCorrect = false;
 function checkAnswer() {
-  if (inputEl.value == levelOne["answer"][0]) {
-    console.log("correct!");
-    answerCorrect = true;
+  if (inputEl.value == levels["answers"][levelNum]) {
+    feedbackEl.innerText = 'Correct!';
+    if (levelNum < 5) {
+      nextBtn.setAttribute("style", "");
+      answerCorrect = true;
+    } else {
+      pointsEl.innerText = "Points: 6";
+      feedbackEl.innerText = 'Congrats! You won!!';
+    }
   } else {
-    console.log("try again");
+    feedbackEl.innerText = 'Try again!';
   }
 };
 
 // next question
 function next() {
-  if (answerCorrect === true) {
-    console.log("next button clicked"); //DEL
     answerCorrect = false;
-
-  };
+    inputEl.value = "";
+    feedbackEl.innerText = "";
+    nextBtn.setAttribute("style", "visibility: hidden");
+    levelNum += 1;
+    levelTitle.innerText = levels["title"][levelNum];
+    quizQuestion.innerText = levels["questions"][levelNum];
+    pointsEl.innerText = `Points: ${levelNum}`;
 };
 
 
