@@ -20,27 +20,27 @@ This app is one I created as part of a project I assigned to my middle school ma
 
 ## Screenshots
 
-### Start screen
+### Start screen:
 
 ![screenshot of start](screenshot_start.png)
 
-### Question
+### Question:
 
 ![screenshot of question](screenshot_question.png)
 
-### Correct answer
+### Correct answer:
 
 ![screenshot of correct answer](screenshot_answer_correct.png)
 
-### Incorrect answer
+### Incorrect answer:
 
 ![screenshot of incorrect answer](screenshot_answer_incorrect.png)
 
-### Hint
+### Hint:
 
 ![screenshot of hint](screenshot_hint.png)
 
-### Win
+### Win:
 
 ![screenshot of win](screenshot_win.png)
 
@@ -50,7 +50,7 @@ This app was built in stages. I started with a basic HTML outline and minimal st
 
 Currently, the questions are pulled from a single set and all are eventually displayed, but in the future I would like to have the questions 'randomly' drawn from a set (though that may be outside the scope of this project and may fit better in a different app entirely). 
 
-### Built with
+### Built with:
 
 - HTML
 - CSS
@@ -58,7 +58,7 @@ Currently, the questions are pulled from a single set and all are eventually dis
 
 ## Status
 
-A live version of this app can be viewed at []().
+A live version of this app can be viewed at [https://ananfito.github.io/quizzo/](https://ananfito.github.io/quizzo/).
 
 ## Connect 
 
