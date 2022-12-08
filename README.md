@@ -1,4 +1,4 @@
-# quizzo
+# Quizzo
 A simple mathematical quiz game.
 
 ## Contents
@@ -12,7 +12,7 @@ A simple mathematical quiz game.
 ## Overview
 This app is one I created as part of a project I assigned to my middle school mathmeatics students. For their end-of-the-semester project they were to design a game which requires math in order to win the game. 
 
-### Requirements 
+### Requirements:
 
 - At least 3 levels
 - At least 2 mathematics questions per level 
