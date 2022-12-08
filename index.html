@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet"> 
   <title>Quizzo</title>
 </head>
 <body>
@@ -12,19 +15,28 @@
     <div class="title">
       <h1>Quizzo</h1>
       <p>The mathematical quiz game to test your knowledge</p>
+      <div class="title__rules">
+        <h2>Rules</h2>
+        <ul id="rules-list">
+          <li>Missed question: -5 points</li>
+          <li>Use a hint: -10 points</li>
+          <li>Complete the game: points * 100</li>
+        </ul>
+      </div>
     </div>
-    <div class="gamezone">
-      <div id="begin-game-text" style=''>
-        <h2>Ready to begin?</h2>
+    <div class="gamezone" id="gamezone">
+      <div id="begin-game-text">
+        <h3>Ready to begin?</h3>
         <button id="start-btn">Start</button>
       </div>
 
-      <div id="quiz-question-zone" style="visibility: hidden">
+      <div class="quiz-question-zone" id="quiz-question-zone" style="visibility: hidden">
         <h2 id='level-title' class='gamezone__title'></h2>
         <h3 id="points">Points: 0</h3>
         <p id='quiz-question' class='gamezone__text'></p>
         <input type='number' name='quiz-input' id='quiz-input'>
         <button id='submit-btn'>Submit</button>
+        <button id='hint-btn'>Hint</button>
         <p id="feedback"></p>
         <button id='next-btn' style="visibility: hidden">Next</button>
       </div>
