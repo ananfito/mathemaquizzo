@@ -1,7 +1,13 @@
 # quizzo
 A simple mathematical quiz game.
 
-## Contents 
+## Contents
+
+- [Overview](#overview)
+- [Screenshot](#screenshot)
+- [My Process](#my-process)
+- [Status](#status)
+- [Connect](#connect)
 
 ## Overview
 This app is one I created as part of a project I assigned to my middle school mathmeatics students. For their end-of-the-semester project they were to design a game which requires math in order to win the game. 
@@ -14,7 +20,17 @@ This app is one I created as part of a project I assigned to my middle school ma
 
 ## Screenshot
 
-![screenshot of project](screenshot.png)
+![screenshot of start](screenshot_start.png)
+
+![screenshot of question](screenshot_question.png)
+
+![screenshot of correct answer](screenshot_answer_correct.png)
+
+![screenshot of incorrect answer](screenshot_answer_incorrect.png)
+
+![screenshot of hint](screenshot_hint.png)
+
+![screenshot of win](screenshot_win.png)
 
 ## My Process
 
