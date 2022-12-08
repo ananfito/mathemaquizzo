@@ -49,10 +49,9 @@ function checkAnswer() {
     if (levelNum < 5) {
       nextBtn.setAttribute("style", "");
       answerCorrect = true;
-    } else {
-      points *= 100;
-      pointsEl.innerText = `Points: ${points}`;
-      feedbackEl.innerText = `Congrats! You won ${points} points!!`;
+    } else { //game win
+      pointsEl.innerText = `Points: ${points * 100}`;
+      feedbackEl.innerText = `Congrats! You won ${points * 100} points!!`;
     }
   } else {
     feedbackEl.innerText = 'Try again!';
