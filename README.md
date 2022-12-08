@@ -4,7 +4,7 @@ A simple mathematical quiz game.
 ## Contents
 
 - [Overview](#overview)
-- [Screenshot](#screenshot)
+- [Screenshots](#screenshots)
 - [My Process](#my-process)
 - [Status](#status)
 - [Connect](#connect)
@@ -18,17 +18,29 @@ This app is one I created as part of a project I assigned to my middle school ma
 - At least 2 mathematics questions per level 
 - Players must answer the mathematics questions correctly before moving to the next level
 
-## Screenshot
+## Screenshots
+
+### Start screen
 
 ![screenshot of start](screenshot_start.png)
 
+### Question
+
 ![screenshot of question](screenshot_question.png)
+
+### Correct answer
 
 ![screenshot of correct answer](screenshot_answer_correct.png)
 
+### Incorrect answer
+
 ![screenshot of incorrect answer](screenshot_answer_incorrect.png)
 
+### Hint
+
 ![screenshot of hint](screenshot_hint.png)
+
+### Win
 
 ![screenshot of win](screenshot_win.png)
 
