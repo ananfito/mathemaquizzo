@@ -30,6 +30,7 @@ var levelNum = 0;
 var points = 0;
 let answerCorrect = false;
 let hintGiven = false;
+let gameOver = false;
 
 // Game functions
 // start game
@@ -50,6 +51,7 @@ function checkAnswer() {
       nextBtn.setAttribute("style", "");
       answerCorrect = true;
     } else { //game win
+      gameOver = true;
       pointsEl.innerText = `Points: ${points * 100}`;
       feedbackEl.innerText = `Congrats! You won ${points * 100} points!!`;
     }
@@ -77,7 +79,7 @@ function next() {
 
 // give a hint & deduct points
 function hint() {
-  if (hintGiven === false) {
+  if (hintGiven === false && gameOver === false) {
     points -= 10;
     hintGiven = true;
     feedbackEl.innerText = levels["hints"][levelNum];
