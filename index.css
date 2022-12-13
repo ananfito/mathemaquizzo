@@ -7,7 +7,6 @@ body {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   text-align: center;
-  /*background-color: #008b8b;*/
 }
 
 h1 h2 h3 h4 {
@@ -18,7 +17,6 @@ h1 h2 h3 h4 {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  /*background-color: #00ffff;*/
   padding: 2em 1.5em;
 }
 

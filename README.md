@@ -10,7 +10,7 @@ A simple mathematical quiz game.
 - [Connect](#connect)
 
 ## Overview
-This app is one I created as part of a project I assigned to my middle school mathmeatics students. For their end-of-the-semester project they were to design a game which requires math in order to win the game. 
+This app is one I created as part of a project I assigned to my middle school mathmeatics students. For their end-of-the-semester project they were to design a game which requires math in order to win the game. I chose to do the project too and, this case, create a quiz application which displays questions, awards points for correct answers, deduct points for wrong answers, and displays hints (with a deduciton in points).
 
 ### Requirements:
 

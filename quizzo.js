@@ -79,7 +79,7 @@ function next() {
 
 // give a hint & deduct points
 function hint() {
-  if (hintGiven === false && gameOver === false) {
+  if (answerCorrect === false && hintGiven === false && gameOver === false) {
     points -= 10;
     hintGiven = true;
     feedbackEl.innerText = levels["hints"][levelNum];
