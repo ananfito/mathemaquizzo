@@ -1,3 +1,5 @@
+// JavaScript for MathemaQuizzo
+
 // Game Level Info
 const levels = {
   title: ["Level 1: Question 1", "Level 1: Question 2", "Level 2: Question 1", "Level 2: Question 2", "Level 3: Question 1", "Level 3: Question 2"],

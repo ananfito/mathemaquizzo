@@ -1,4 +1,4 @@
-# Quizzo
+# MathemaQuizzo
 A simple mathematical quiz game.
 
 ## Contents
@@ -58,7 +58,7 @@ Currently, the questions are pulled from a single set and all are eventually dis
 
 ## Status
 
-A live version of this app can be viewed at [https://ananfito.github.io/quizzo/](https://ananfito.github.io/quizzo/).
+A live version of this app can be viewed at [https://ananfito.github.io/mathemaquizzo/](https://ananfito.github.io/mathemaquizzo/).
 
 ## Connect 
 
